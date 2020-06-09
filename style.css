@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Vg5000;
+  src: url(vg5000-regular_web.woff), url(vg5000-regular_web.woff2);
+}
+
+body{
+  background: linear-gradient(to bottom right, #728694, #f5f5b9);
+  font-family: "Vg5000";
+}
+
+nav{
+  display: flex;
+}
+
+nav {
+    margin: 25px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+nav a{
+  padding: 15px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fdffe7;
+  font-weight: 100;
+}
+
+nav a:hover{
+  color: lightcoral;
+
+}
+
+h1 img{
+  max-width: 65px;
+  margin-top: -15px;
+}
+
+.images{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image{
+  max-width: 50%;
+  margin: 25px;
+  position: relative;
+}
+
+.image img{
+  /*max-height: 300px;*/
+  margin: 20px;
+}
+
+
+.large-image{
+  width: 100%;
+}
+
+.large-image img{
+  width: 100%;
+}
+
+.images p{
+  opacity: 1;
+  position: relative;
+}
+
+
+
+.overlay{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    transition: opacity 0.4s;
+}
+
+p{
+  color: #ecb6b6;
+}
+
+.overlay p{
+  
+  font-size: 32px;
+  max-width: 50%;
+ /*background: #ffd7ddc9;*/
+  border-radius: 10px;
+  padding: 25px 10px 10px 10px;
+  /* color: #fdffe7; */
+}
+
+.orphans{
+  color: lightcoral;
+}
+
+
+.overlay:hover{
+  opacity: 1;
+}
+
+
+@media (max-width: 600px){
+  
+  .overlay p{
+    font-size: 24px;
+  }
+  
+  .image{
+    max-width: 100%;
+    margin: 20px;
+  }
+  
+  .image img{
+    margin: 0;
+  }
+  
+  .images{
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  nav a{
+    font-size: 22px;
+  }
+  
+}
+
+
+
+
